@@ -1,1 +1,1 @@
-# flask-react-native
+# flask + react-native + sqlalchemy
