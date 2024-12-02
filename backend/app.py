@@ -40,6 +40,16 @@ def get_articles():
     return jsonify(results)
 
 
+@app.route("/get/<id>", methods=["GET"])
+def post_details(id):
+    print(f"Getting article with ID: {id}")
+    article = Articles.query.get(id)
+    if article:
+        return article_schema.jsonify(article)
+    else:
+        return jsonify({"error": "Article not found"}), 404
+
+
 @app.route("/add", methods=["POST"])
 def add_article():
     try:
