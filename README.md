@@ -1,7 +1,7 @@
 # flask + react-native + sqlalchemy
 
 ## in order to run or test this:
-- make sure you have ```XAMPP``` with ```MySQL``` and ```Apache``` running on the localhost. (so that you have access to ```PhpMyAdmin```: create a table there and name it ```flask```)
+- make sure you have ```XAMPP``` with ```MySQL``` and ```Apache``` running on the localhost. (so that you have access to ```PhpMyAdmin```: create a new table there and name it ```flask```)
 - python must also be installed on your machine (tick the ```PATH``` checkbox before installing python)
 - create the ```environment variable```, activate it, then install the packages in ```requirements.txt```
 - once your done with the instructions above, just run the backend by typing in the ```Command Prompt``` of Vscode:
