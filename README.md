@@ -5,7 +5,7 @@
 - python must also be installed on your machine (tick the ```PATH``` checkbox before installing python)
 - once your done with the instructions above, just run the backend by typing the command in the terminal:
 ``` python backend/app.py ```
-- install ```Postman``` so that you can test the ```CRUD``` routes 
+- finally, install ```Postman``` so that you can test the ```CRUD``` routes 
 
 ### creating an environment variable
 ```
