@@ -24,3 +24,14 @@ Lib/site-packages/
 *.log
 .gitignore
 ```
+
+### creating requirements.txt
+```
+pip freeze > requirements.txt
+```
+
+### installing from requirements.txt
+```
+pip install -r requirements.txt
+
+```
