@@ -1,5 +1,11 @@
 # flask + react-native + sqlalchemy
 
+## backend
+- create article ✅
+- read article (single or all articles) ✅ 
+- update article ✅
+- delete article (in progress) ❌
+
 ## in order to run or test this:
 - make sure you have ```XAMPP``` with ```MySQL``` and ```Apache``` running on the localhost. (so that you have access to ```PhpMyAdmin```: create a new table there and name it ```flask```)
 - python must also be installed on your machine (tick the ```PATH``` checkbox before installing python)
@@ -64,11 +70,5 @@ Thumbs.db
 pip freeze > requirements.txt
 ```
 ****
-
-## backend
-- create article ✅
-- read article (single or all articles) ✅ 
-- update article ✅
-- delete article (in progress) ❌
 
 
