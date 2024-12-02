@@ -2,7 +2,7 @@
 
 ### creating an environment variable
 ```
-python -m venv .venv
+python -m venv venv
 ```
 
 ### activating the environment variable: (run in command prompt)
