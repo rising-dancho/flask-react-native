@@ -1,10 +1,11 @@
 # flask + react-native + sqlalchemy
 
-in order to run or test this:
-- make sure you have xampp with ```mysql``` and ```apache``` are running on the localhost. so that you have access to ```phpmyadmin```
-- and you have python installed on your machine (tick the ```PATH``` checkbox before installing python)
-- just run the backend by typing the command in the terminal:
-``` python app.py ``` 
+## in order to run or test this:
+- make sure you have ```XAMPP``` with ```MySQL``` and ```Apache``` running on the localhost. (so that you have access to ```PhpMyAdmin```)
+- python must also be installed on your machine (tick the ```PATH``` checkbox before installing python)
+- once your done with the instructions above, just run the backend by typing the command in the terminal:
+``` python app.py ```
+- install ```Postman``` so that you can test the ```CRUD``` routes 
 
 ### creating an environment variable
 ```
