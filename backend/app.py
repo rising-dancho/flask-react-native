@@ -67,6 +67,20 @@ def add_article():
         return jsonify({"error": str(e)}), 500
 
 
+@app.route("/update/<id>", methods=["PUT"])
+def update_article(id):
+    article = Articles.query.get(id)
+
+    title = request.json["title"]
+    body = request.json["body"]
+
+    article.title = title
+    article.body = body
+
+    db.session.commit()
+    return article_schema.jsonify(article)
+
+
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()
