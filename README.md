@@ -65,3 +65,10 @@ pip freeze > requirements.txt
 ```
 ****
 
+## backend
+- create article ✅
+- read article (single or all articles) ✅ 
+- update article ✅
+- delete article (in progress) ❌
+
+
