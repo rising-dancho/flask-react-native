@@ -35,7 +35,9 @@ articles_schema = ArticleSchema(many=True)
 
 @app.route("/get", methods=["GET"])
 def get_articles():
-    return jsonify({"Hello": "World"})
+    all_articles = Articles.query.all()
+    results = articles_schema.dump(all_articles)
+    return jsonify(results)
 
 
 @app.route("/add", methods=["POST"])
