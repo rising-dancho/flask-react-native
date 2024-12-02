@@ -21,11 +21,15 @@ __pycache__/
 *.pyd
 *.egg-info/
 *.egg
-env/
-venv/
-Lib/
-backend/__pycache__/
 pyvenv.cfg
+
+# Ignore backend-specific Python cache
+backend/__pycache__/
+
+# Ignore virtual environments
+.venv/
+venv/
+env/
 
 # Ignore site-packages if using a relative path
 Lib/site-packages/
@@ -33,7 +37,13 @@ Lib/site-packages/
 # OS or IDE-specific files
 .DS_Store
 *.log
-.gitignore
+
+# IDE-specific files (e.g., for VSCode)
+.vscode/
+
+# Windows image file caches
+Thumbs.db
+
 ```
 
 ### installing packages from the requirements.txt
