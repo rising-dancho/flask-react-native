@@ -36,13 +36,12 @@ Lib/site-packages/
 .gitignore
 ```
 
-### creating requirements.txt
-```
-pip freeze > requirements.txt
-```
-
 ### installing from the requirements.txt
 ```
 pip install -r requirements.txt
+```
 
+### creating requirements.txt
+```
+pip freeze > requirements.txt
 ```
