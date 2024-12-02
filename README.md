@@ -30,7 +30,7 @@ Lib/site-packages/
 pip freeze > requirements.txt
 ```
 
-### installing from requirements.txt
+### installing from the requirements.txt
 ```
 pip install -r requirements.txt
 
