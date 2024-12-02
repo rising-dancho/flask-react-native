@@ -2,7 +2,8 @@
 
 in order to run or test this:
 - make sure you have python, xampp (mysql and apache are running in the localhost) installed on your machine
-- just run the backend by typing the command in the terminal: ``` python app.py ``` 
+- just run the backend by typing the command in the terminal:
+``` python app.py ``` 
 
 ### creating an environment variable
 ```
