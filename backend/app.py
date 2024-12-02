@@ -41,8 +41,8 @@ def get_articles():
 
 
 @app.route("/get/<id>", methods=["GET"])
-def post_details(id):
-    print(f"Getting article with ID: {id}")
+def get_single_article(id):
+    print("Getting article with ID: {id}")
     article = Articles.query.get(id)
     if article:
         return article_schema.jsonify(article)
@@ -79,6 +79,14 @@ def update_article(id):
 
     db.session.commit()
     return article_schema.jsonify(article)
+
+
+@app.route("/delete/<id>", methods=["DELETE"])
+def delete_article(id):
+    article = Articles.query.get(id)
+    db.session.delete(article)
+    db.session.commit()
+    return article_schema.jsonify({"msg":"Delete Successful!"})
 
 
 if __name__ == "__main__":
