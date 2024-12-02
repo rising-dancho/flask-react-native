@@ -1,4 +1,4 @@
-# flask + react-native + sqlalchemy
+# flask + react-native + sqlalchemy + mysql
 
 ## backend
 - create article ✅
