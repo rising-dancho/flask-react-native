@@ -4,7 +4,7 @@
 - make sure you have ```XAMPP``` with ```MySQL``` and ```Apache``` running on the localhost. (so that you have access to ```PhpMyAdmin```)
 - python must also be installed on your machine (tick the ```PATH``` checkbox before installing python)
 - create the ```environment variable```, activate the it, then install the packages in ```requirements.txt```
-- once your done with the instructions above, just run the backend by typing the command in the ```command prompt``` inside ```Vscode```:
+- once your done with the instructions above, just run the backend by typing in the ```Command Prompt``` of vscode:
 ``` python backend/app.py ```
 - finally, install ```Postman``` so that you can test the ```CRUD``` routes 
 
