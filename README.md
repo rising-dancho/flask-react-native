@@ -1,7 +1,7 @@
 # flask + react-native + sqlalchemy
 
 in order to run or test this:
-- make sure you have python, xampp (mysql and apache are running in the localhost) installed on your machine
+- make sure you have xampp (```mysql``` and ```apache``` are running on the localhost), and python (tick the ```PATH``` checkbox before installing python) on your machine
 - just run the backend by typing the command in the terminal:
 ``` python app.py ``` 
 
