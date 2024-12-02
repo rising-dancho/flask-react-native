@@ -1,3 +1,14 @@
+### creating an environment variable
+```
+python -m venv .venv
+```
+
+### activating the environment variable: (run in command prompt)
+```
+cd .venv/Scripts
+activate.bat
+```
+
 # flask + react-native + sqlalchemy
 
 ### gitignore must include
