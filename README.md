@@ -1,10 +1,16 @@
-# flask + react-native + sqlalchemy
+# flask + react-native + sqlalchemy + mysql
 
 ## backend
 - create article ✅
 - read article (single or all articles) ✅ 
 - update article ✅
-- delete article (in progress) ❌
+- delete article ✅
+
+## frontend
+- ui: create article ❌
+- ui: read article (single or all articles) ❌
+- ui: update article ❌
+- ui: delete article ❌
 
 ## in order to run or test this:
 - make sure you have ```XAMPP``` with ```MySQL``` and ```Apache``` running on the localhost. (so that you have access to ```PhpMyAdmin```: create a new table there and name it ```flask```)
