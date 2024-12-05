@@ -1,24 +1,23 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import { PaperProvider } from 'react-native-paper';
-import Home from '../components/Home.jsx';
+import Constants from 'expo-constants';
+
+import Home from '../components/Home.js';
 
 export default function Index() {
-  const name = 'adfinem';
-
   return (
-    <PaperProvider>
-      <View
-        style={{
-          flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <Home name={name} />
-        <StatusBar style="auto" />
-      </View>
-    </PaperProvider>
+    <View style={styles.container}>
+      <Home />
+      <StatusBar style="auto" />
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#eddfdf',
+    marginTop: Constants.statusBarHeight,
+  },
+});

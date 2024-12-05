@@ -1,5 +1,12 @@
-import { Stack } from "expo-router";
+import { Stack } from 'expo-router';
 
 export default function RootLayout() {
-  return <Stack />;
+  return (
+    <Stack
+      screenOptions={{
+        headerTitle: 'Article', // Set a global default title
+        headerShown: true, // Show or hide the header globally
+      }}
+    />
+  );
 }
