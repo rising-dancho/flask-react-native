@@ -75,13 +75,17 @@ def add_article():
 @app.route("/update/<id>", methods=["PUT"])
 def update_article(id):
     article = Articles.query.get(id)
+    if not article:
+        return jsonify({"error": "Article not found"}), 404
 
-    title = request.json["title"]
-    body = request.json["body"]
+    title = request.json.get("title")
+    body = request.json.get("body")
+
+    if not title or not body:
+        return jsonify({"error": "Title and body are required"}), 400
 
     article.title = title
     article.body = body
-
     db.session.commit()
     return article_schema.jsonify(article)
 
@@ -95,7 +99,6 @@ def delete_article(id):
 
 
 if __name__ == "__main__":
-    app.run(host="http://127.0.0.1:5000/", port=3000, debug=True)
     with app.app_context():
         db.create_all()
-    print("Database tables created successfully.")
+    app.run(host="127.0.0.1", port=3000, debug=True)
