@@ -80,7 +80,7 @@ pip freeze > requirements.txt
 
 - ui: read article (all articles) ✅
 - ui: read article (single article) ❌
-- ui: create article ❌
+- ui: create article (in progress) ❌
 - ui: update article ❌
 - ui: delete article ❌
 
