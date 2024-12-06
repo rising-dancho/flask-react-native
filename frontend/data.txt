@@ -1,0 +1,17 @@
+const data = [
+  {
+    id: 1,
+    title: 'First title',
+    body: 'First body',
+  },
+  {
+    id: 2,
+    title: 'Second title',
+    body: 'Second body',
+  },
+  {
+    id: 3,
+    title: 'Third title',
+    body: 'Third body',
+  },
+];

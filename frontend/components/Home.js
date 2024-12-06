@@ -1,25 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Text, View, FlatList, StyleSheet } from 'react-native';
 import { Card, FAB } from 'react-native-paper';
 
 function Home() {
-  const data = [
-    {
-      id: 1,
-      title: 'First title',
-      body: 'First body',
-    },
-    {
-      id: 2,
-      title: 'Second title',
-      body: 'Second body',
-    },
-    {
-      id: 3,
-      title: 'Third title',
-      body: 'Third body',
-    },
-  ];
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch('http://127.0.0.1:5000/get', {
+      method: 'GET',
+    })
+      .then((res) => res.json())
+      .then((article) => {
+        setData(article);
+      });
+  }, []);
+
+  console.log(data);
 
   const renderData = (item) => {
     return (
