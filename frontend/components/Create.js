@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
 function Create() {
   return (
-    <div>
-      
-    </div>
-  )
+    <View>
+      <Text>Create screen</Text>
+    </View>
+  );
 }
 
-export default Create
+export default Create;
