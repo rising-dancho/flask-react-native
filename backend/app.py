@@ -33,6 +33,11 @@ article_schema = ArticleSchema()
 articles_schema = ArticleSchema(many=True)
 
 
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({"message": "Welcome to the Flask API!"})
+
+
 @app.route("/get", methods=["GET"])
 def get_articles():
     all_articles = Articles.query.all()
@@ -86,10 +91,11 @@ def delete_article(id):
     article = Articles.query.get(id)
     db.session.delete(article)
     db.session.commit()
-    return article_schema.jsonify({"msg":"Delete Successful!"})
+    return article_schema.jsonify({"msg": "Delete Successful!"})
 
 
 if __name__ == "__main__":
+    app.run(host="http://127.0.0.1:5000/", port=3000, debug=True)
     with app.app_context():
         db.create_all()
     print("Database tables created successfully.")
