@@ -10,8 +10,8 @@
 - make sure you have ```XAMPP``` with ```MySQL``` and ```Apache``` running on the localhost. (so that you have access to ```PhpMyAdmin```: create a new table there and name it ```flask```)
 - python must also be installed on your machine (tick the ```PATH``` checkbox before installing python)
 - create the ```virtual environment```, activate it, then install the packages in ```requirements.txt```
-- once your done with the instructions above, just run the backend by typing in the ```Command Prompt``` of Vscode:
-``` python backend/app.py ```
+- once your done with the instructions above, just run the backend by using the ```Run and Debug``` button in Vscode:
+``` Run and Debug > Flask > app.py ```
 - finally, install ```Postman``` so that you can test the ```CRUD``` routes 
 
 ### creating an environment variable
