@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Text, View, FlatList, StyleSheet } from 'react-native';
-import { Card } from 'react-native-paper';
+import { Card, FAB } from 'react-native-paper';
 
 function Home() {
   const data = [
@@ -31,7 +31,7 @@ function Home() {
   };
 
   return (
-    <View>
+    <View style={styles.container}>
       <FlatList
         data={data}
         renderItem={({ item }) => {
@@ -44,12 +44,21 @@ function Home() {
         ListFooterComponent={() => (
           <Text style={styles.footer}>© 2024 adfinem</Text>
         )}
+        style={styles.flatlist}
+      />
+      <FAB
+        style={styles.fab}
+        icon="plus"
+        onPress={() => alert('You touched my tralala')}
       />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
   cardStyle: {
     padding: 10,
     margin: 10,
@@ -62,6 +71,14 @@ const styles = StyleSheet.create({
   },
   fontStyle: {
     fontSize: 20,
+  },
+  fab: {
+    position: 'absolute',
+    margin: 10,
+    right: 0,
+    bottom: 0,
+    width: 56,
+    height: 56,
   },
   // header: {
   //   padding: 10,
