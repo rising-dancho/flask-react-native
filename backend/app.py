@@ -2,9 +2,10 @@ from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 import datetime
 from flask_marshmallow import Marshmallow
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:@localhost:3306/flask"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
@@ -101,4 +102,4 @@ def delete_article(id):
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()
-    app.run(host="127.0.0.1", port=3000, debug=True)
+    app.run(host="0.0.0.0", debug=True)
