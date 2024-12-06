@@ -1,6 +1,6 @@
 # flask + react-native + sqlalchemy + mysql
 
-## backend
+# backend
 - create article ✅
 - read article (single or all articles) ✅ 
 - update article ✅
@@ -70,7 +70,7 @@ Thumbs.db
 pip freeze > requirements.txt
 ```
 
-## frontend
+# frontend
 - ui: create article ❌
 - ui: read article (single or all articles) ❌
 - ui: update article ❌
