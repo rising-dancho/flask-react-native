@@ -24,7 +24,7 @@ function Home() {
   const renderData = (item) => {
     return (
       <Card style={styles.cardStyle}>
-        <Text>{item.title}</Text>
+        <Text style={styles.fontStyle}>{item.title}</Text>
         <Text>{item.body}</Text>
       </Card>
     );
@@ -59,6 +59,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 10,
+  },
+  fontStyle: {
+    fontSize: 20,
   },
   // header: {
   //   padding: 10,
