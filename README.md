@@ -69,7 +69,6 @@ Thumbs.db
 ```
 pip freeze > requirements.txt
 ```
-****
 
 ## frontend
 - ui: create article ❌
@@ -77,5 +76,14 @@ pip freeze > requirements.txt
 - ui: update article ❌
 - ui: delete article ❌
 
-  
+### install npm packages before running 
+```
+npm install
+```
 
+### command for running the frontend
+```
+npm run dev
+```
+  
+****
