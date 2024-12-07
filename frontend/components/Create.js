@@ -40,12 +40,12 @@ function Create() {
 }
 
 const styles = StyleSheet.create({
-  container: { margin: 10, marginTop: 30 },
+  container: { margin: 10, marginTop: 22 },
   inputStyle: {
-    marginTop: 5,
+    marginTop: 6,
   },
   btnStyle: {
-    marginTop: 10,
+    marginTop: 12,
     borderRadius: 4,
   },
 });
