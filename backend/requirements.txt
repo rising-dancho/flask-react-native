@@ -2,6 +2,7 @@ blinker==1.9.0
 click==8.1.7
 colorama==0.4.6
 Flask==3.1.0
+Flask-Cors==5.0.0
 flask-marshmallow==1.2.1
 Flask-SQLAlchemy==3.1.1
 itsdangerous==2.2.0
@@ -13,4 +14,3 @@ packaging==24.2
 SQLAlchemy==2.0.36
 typing_extensions==4.12.2
 Werkzeug==3.1.3
-
