@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Text, View, FlatList, StyleSheet } from 'react-native';
 import { Card, FAB } from 'react-native-paper';
 
-function Home(props) {
+function Home({ navigation }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -45,7 +45,7 @@ function Home(props) {
       <FAB
         style={styles.fab}
         icon="plus"
-        onPress={() => props.navigation.navigate('Create')}
+        onPress={() => navigation.navigate('Create')}
       />
     </View>
   );

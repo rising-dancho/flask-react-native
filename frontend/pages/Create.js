@@ -2,9 +2,27 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { TextInput, Button } from 'react-native-paper';
 
-function Create() {
+function Create({ navigation }) {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
+
+  const insertData = () => {
+    fetch('http://127.0.0.1:5000/add', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        title: title,
+        body: body,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        navigation.navigate('Home');
+      })
+      .catch((error) => console.log(error));
+  };
 
   return (
     <View style={styles.container}>
@@ -31,7 +49,7 @@ function Create() {
         mode="contained"
         uppercase="true"
         icon="pencil"
-        onPress={() => alert('You touched my tralala')}
+        onPress={() => insertData()}
       >
         Add Article
       </Button>
