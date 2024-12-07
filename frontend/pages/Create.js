@@ -44,8 +44,6 @@ function Create({ navigation }) {
       />
       <Button
         style={styles.btnStyle}
-        // textColor="#E9DDFE"
-        // buttonColor="#584290"
         mode="contained"
         uppercase="true"
         icon="pencil"
