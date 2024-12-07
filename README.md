@@ -17,7 +17,7 @@
   `python app.py`
 - finally, install `Postman` so that you can test the `CRUD` routes
 
-### creating an environment variable
+### creating the virtual environment
 
 ```
 python -m venv venv
