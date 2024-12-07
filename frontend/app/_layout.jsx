@@ -5,7 +5,7 @@ export default function RootLayout() {
     <Stack
       screenOptions={{
         headerTitle: 'Article', // Set a global default title
-        headerShown: true, // Show or hide the header globally
+        headerShown: false, // Show or hide the header globally
       }}
     />
   );
