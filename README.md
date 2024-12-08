@@ -2,10 +2,10 @@
 
 # backend
 
-- create article ✅
-- read article (single or all articles) ✅
-- update article ✅
-- delete article ✅
+- C reate article ✅
+- R ead article (single or all articles) ✅
+- U pdate article ✅
+- D elete article ✅
 
 ### in order to run or test the backend:
 
@@ -13,7 +13,7 @@
 - python must also be installed on your machine (tick the `PATH` checkbox before installing python)
 - create the `virtual environment`, activate the virtual environment using the `Command Prompt` (make sure you are in the `Scripts` directory where `activate.bat` is located)
 - `cd` back to `backend` folder where the  `requirements.txt` is located and then run the command to install the packages
-- once you're done with the instructions above, make sure you are in the `backend` folder and then run this code in the `Command Prompt`:
+- once you're done with the instructions above, make sure you are in the `backend` folder and your `XAMPP` is running. And then run this code in the `Command Prompt`:
   `python app.py`
 - finally, install `Postman` so that you can test the `CRUD` routes
 
@@ -82,7 +82,7 @@ pip freeze > requirements.txt
 - ui: read article (all articles) ✅
 - ui: read article (single article) ❌
 - ui: create article ✅
-- ui: refresh list of aritcles (in progress) ❌
+- ui: refresh list of articles (in progress) ❌
 - ui: update article ❌
 - ui: delete article ❌
 
