@@ -14,7 +14,7 @@
 - create article ✅
 - refresh list of articles  ✅
 - update article ✅
-- delete article (in progress) ❌
+- delete article ✅
 
 ---
 
