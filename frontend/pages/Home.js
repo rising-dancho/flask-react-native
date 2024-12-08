@@ -30,8 +30,10 @@ function Home({ navigation }) {
 
   const renderData = (item) => {
     return (
-      <Card style={styles.cardStyle} onPress={() => clickedItem(item)}>
-        <Text style={styles.fontStyle}>{item.title}</Text>
+      <Card style={styles.cardStyle}>
+        <Text style={styles.fontStyle} onPress={() => clickedItem(item)}>
+          {item.title}
+        </Text>
         <Text>{item.body}</Text>
       </Card>
     );
