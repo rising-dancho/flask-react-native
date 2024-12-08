@@ -18,7 +18,7 @@
 
 ---
 
-## in order to run the frontend:
+## in order to run the backend:
 
 - make sure you have `XAMPP` with `MySQL` and `Apache` running on the localhost. (so that you have access to `PhpMyAdmin`: create a new table there and name it `flask`)
 - python must also be installed on your machine (tick the `PATH` checkbox before installing python)
