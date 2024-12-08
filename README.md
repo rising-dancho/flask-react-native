@@ -16,6 +16,7 @@ however, i found a free alternative.. "pythonanywhere.com" i'll find out if i ca
 ##### why using mysql is a problem in deployment:
 ```
 MySQL Server Accessibility:
+
 Vercel is a serverless platform, and it does not allow persistent connections to databases like MySQL by default.
 However, if you're using flask_mysqldb with a MySQL database, you need to ensure your MySQL database is hosted externally,
 such as on a cloud service like PlanetScale, Amazon RDS, MySQL on PythonAnywhere, or ClearDB.
