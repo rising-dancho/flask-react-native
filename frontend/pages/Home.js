@@ -31,10 +31,10 @@ function Home({ navigation }) {
   const renderData = (item) => {
     return (
       <Card style={styles.cardStyle}>
-        <Text style={styles.fontStyle} onPress={() => clickedItem(item)}>
+        <Text style={styles.title} onPress={() => clickedItem(item)}>
           {item.title}
         </Text>
-        <Text>{item.body}</Text>
+        <Text style={styles.body}>{item.body}</Text>
       </Card>
     );
   };
@@ -79,8 +79,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 10,
   },
-  fontStyle: {
+  title: {
     fontSize: 20,
+    fontWeight: '500',
+    marginBottom: 4,
+    color: '#381F71',
+  },
+  body: {
+    fontSize: 14,
   },
   fab: {
     position: 'absolute',
