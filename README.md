@@ -14,7 +14,8 @@ of course, don't want to deploy on non free playforms
 just so that i can get my simple crud app running on the web..
 however, i found a free alternative.. "pythonanywhere.com". although it can work.
 it's not worth the trouble. the free account is slow and service would be poor.
-solution: migrate from mysql to mongodb instead
+
+SOLUTION: migrate from "mysql" to "mongodb" instead
 ```
 ##### why using mysql is a problem in deployment:
 ```
