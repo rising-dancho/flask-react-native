@@ -92,7 +92,8 @@ pip freeze > requirements.txt
 
 ## in order to run the frontend:
 - cd to `frontend` folder
-- install `npm` packages
+###### using the terminal:
+- install `npm` packages 
 - run the frontend 
 
 ### install npm packages before running
