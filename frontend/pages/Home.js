@@ -4,15 +4,22 @@ import { Card, FAB } from 'react-native-paper';
 
 function Home({ navigation }) {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  const loadData = () => {
     fetch('http://127.0.0.1:5000/get', {
       method: 'GET',
     })
       .then((res) => res.json())
       .then((article) => {
         setData(article);
-      });
+        setLoading(false);
+      })
+      .catch((error) => console.log(error));
+  };
+
+  useEffect(() => {
+    loadData();
   }, []);
 
   console.log(data);
@@ -33,6 +40,10 @@ function Home({ navigation }) {
         renderItem={({ item }) => {
           return renderData(item);
         }}
+        onRefresh={() => {
+          loadData();
+        }}
+        refreshing={loading}
         keyExtractor={(item) => `${item.id}`}
         // ListHeaderComponent={() => (
         //   <Text style={styles.header}>List of Pokemons</Text>
