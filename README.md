@@ -2,10 +2,10 @@
 
 # backend
 
-- Create article ✅
-- Read article (single or all articles) ✅
-- Update article ✅
-- Delete article ✅
+- C reate article ✅
+- R ead article (single or all articles) ✅
+- U pdate article ✅
+- D elete article ✅
 
 ### in order to run or test the backend:
 
