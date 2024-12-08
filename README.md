@@ -10,10 +10,10 @@
 # frontend
 
 - ui: read article: all articles ✅
-- ui: read article: single article (in progress) ❌
+- ui: read article: single article ✅
 - ui: create article ✅
 - ui: refresh list of articles  ✅
-- ui: update article ❌
+- ui: update article (in progress) ❌
 - ui: delete article ❌
 
 ---
