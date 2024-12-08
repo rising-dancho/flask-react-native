@@ -19,16 +19,17 @@ function Details({ route, navigation }) {
             icon="update"
             onPress={() => navigation.navigate('Edit', { data: data })}
           >
-            Update Article
+            Update
           </Button>
           <Button
             style={styles.btnStyle}
-            mode="contained"
             uppercase="true"
             icon="trash-can"
+            textColor="#ffffff"
+            buttonColor="#D03848"
             onPress={() => alert('Ughh.. my dingdingdong..')}
           >
-            Delete Article
+            Delete
           </Button>
         </View>
       </Card>
