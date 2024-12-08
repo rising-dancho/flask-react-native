@@ -13,8 +13,8 @@
 - read single article ✅
 - create article ✅
 - refresh list of articles  ✅
-- update article (in progress) ❌
-- delete article ❌
+- update article ✅
+- delete article (in progress) ❌
 
 ---
 
