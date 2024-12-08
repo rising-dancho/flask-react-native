@@ -2,8 +2,9 @@ import React from 'react';
 import { ScrollView, Text, StyleSheet, View } from 'react-native';
 import { Card, Button } from 'react-native-paper';
 
-function Details({ route }) {
+function Details({ route, navigation }) {
   const data = route.params.data;
+
   return (
     <ScrollView>
       <Card style={styles.cardStyle}>
@@ -16,7 +17,7 @@ function Details({ route }) {
             mode="contained"
             uppercase="true"
             icon="update"
-            onPress={() => alert('You touched my tralala')}
+            onPress={() => navigation.navigate('Edit', { data: data })}
           >
             Update Article
           </Button>
