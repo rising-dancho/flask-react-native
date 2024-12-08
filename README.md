@@ -7,7 +7,18 @@
 - U pdate article ✅
 - D elete article ✅
 
-### in order to run or test the backend:
+# frontend
+
+- ui: read article: all articles ✅
+- ui: read article: single article (in progress) ❌
+- ui: create article ✅
+- ui: refresh list of articles  ✅
+- ui: update article ❌
+- ui: delete article ❌
+
+---
+
+## in order to run or test the backend:
 
 - make sure you have `XAMPP` with `MySQL` and `Apache` running on the localhost. (so that you have access to `PhpMyAdmin`: create a new table there and name it `flask`)
 - python must also be installed on your machine (tick the `PATH` checkbox before installing python)
@@ -77,14 +88,12 @@ Thumbs.db
 pip freeze > requirements.txt
 ```
 
-# frontend
+---
 
-- ui: read article: all articles ✅
-- ui: read article: single article (in progress) ❌
-- ui: create article ✅
-- ui: refresh list of articles  ✅
-- ui: update article ❌
-- ui: delete article ❌
+## in order to run or test the backend:
+- cd to `frontend` folder
+- install `npm` packages
+- run the frontend 
 
 ### install npm packages before running
 
@@ -98,4 +107,4 @@ npm install
 npm run dev
 ```
 
----
+
