@@ -79,10 +79,10 @@ pip freeze > requirements.txt
 
 # frontend
 
-- ui: read article (all articles) ✅
-- ui: read article (single article) ❌
+- ui: read article: all articles ✅
+- ui: read article: single article (in progress) ❌
 - ui: create article ✅
-- ui: refresh list of articles (in progress) ❌
+- ui: refresh list of articles  ✅
 - ui: update article ❌
 - ui: delete article ❌
 
