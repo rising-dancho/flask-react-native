@@ -9,8 +9,9 @@
 
 ```
 uh..oh!! can't deploy!! hahahaha damn son! no one's gonna carry the boats!!
-currently having issues with "mysqlclient" dependency causing issues and  errors upon deployment!
-don't want to deploy on non free playforms just to get my simple crud app working
+currently having issues with "mysqlclient" dependency causing issues and errors upon deployment!
+don't want to deploy on non free playforms just to get my simple crud app working..
+however, i found a free alternative.. pythonanywhere.com... i'll find out if it works 
 ```
 
 # frontend
