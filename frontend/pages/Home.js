@@ -24,9 +24,13 @@ function Home({ navigation }) {
 
   console.log(data);
 
+  const clickedItem = (item) => {
+    navigation.navigate('Details', { data: item });
+  };
+
   const renderData = (item) => {
     return (
-      <Card style={styles.cardStyle}>
+      <Card style={styles.cardStyle} onPress={() => clickedItem(item)}>
         <Text style={styles.fontStyle}>{item.title}</Text>
         <Text>{item.body}</Text>
       </Card>
@@ -45,9 +49,6 @@ function Home({ navigation }) {
         }}
         refreshing={loading}
         keyExtractor={(item) => `${item.id}`}
-        // ListHeaderComponent={() => (
-        //   <Text style={styles.header}>List of Pokemons</Text>
-        // )}
         ListFooterComponent={() => (
           <Text style={styles.footer}>© 2024 adfinem</Text>
         )}
@@ -87,11 +88,6 @@ const styles = StyleSheet.create({
     width: 56,
     height: 56,
   },
-  // header: {
-  //   padding: 10,
-  //   fontSize: 24,
-  //   fontWeight: '700',
-  // },
 });
 
 export default Home;

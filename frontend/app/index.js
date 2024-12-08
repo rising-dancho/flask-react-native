@@ -4,6 +4,7 @@ import { View, StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
 import Home from '../pages/Home.js';
 import Create from '../pages/Create.js';
+import Details from '../pages/Details.js';
 
 const Stack = createStackNavigator();
 
@@ -13,6 +14,7 @@ export default function Index() {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Create" component={Create} />
+        <Stack.Screen name="Details" component={Details} />
       </Stack.Navigator>
     </View>
   );
