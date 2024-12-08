@@ -9,7 +9,7 @@
 
 ```
 uh..oh!! can't deploy!! hahahaha damn son! no one's gonna carry the boats!!
-currently having issues with "mysqlclient" dependency causing issues and causing errors upon deployment!
+currently having issues with "mysqlclient" dependency causing issues and  errors upon deployment!
 don't want to deploy on non free playforms just to get my simple crud app working
 ```
 
