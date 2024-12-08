@@ -90,7 +90,7 @@ pip freeze > requirements.txt
 
 ---
 
-## in order to run or test the backend:
+## in order to run the frontend:
 - cd to `frontend` folder
 - install `npm` packages
 - run the frontend 
