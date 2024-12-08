@@ -7,6 +7,10 @@
 - U pdate article ✅
 - D elete article ✅
 
+```
+uh..oh!! can't deploy!! hahahaha damn son. no one's gonna carry the boats atm. switching to mongodb instead of mysql
+```
+
 # frontend
 
 - read all articles ✅
