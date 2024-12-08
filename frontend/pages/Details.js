@@ -5,6 +5,19 @@ import { Card, Button } from 'react-native-paper';
 function Details({ route, navigation }) {
   const data = route.params.data;
 
+  const deleteData = () => {
+    fetch(`http://127.0.0.1:5000/delete/${data.id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((data) => {
+        navigation.navigate('Home');
+      })
+      .catch((error) => console.log(error));
+  };
+
   return (
     <ScrollView>
       <Card style={styles.cardStyle}>
@@ -27,7 +40,7 @@ function Details({ route, navigation }) {
             icon="trash-can"
             textColor="#ffffff"
             buttonColor="#D03848"
-            onPress={() => alert('Ughh.. my dingdingdong..')}
+            onPress={() => deleteData()}
           >
             Delete
           </Button>
