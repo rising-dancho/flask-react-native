@@ -9,8 +9,8 @@
 
 # frontend
 
-- read article: all articles ✅
-- read article: single article ✅
+- read all articles ✅
+- read single article ✅
 - create article ✅
 - refresh list of articles  ✅
 - update article (in progress) ❌
