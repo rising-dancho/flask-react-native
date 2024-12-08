@@ -12,7 +12,8 @@ uh..oh!! can't deploy!! hahahaha damn son! no one's gonna carry the boats!!
 currently having issues with "mysqlclient" dependency causing issues and errors upon deployment!
 of course, don't want to deploy on non free playforms
 just so that i can get my simple crud app running on the web..
-however, i found a free alternative.. "pythonanywhere.com". although it can work. the free account is slow and bad.
+however, i found a free alternative.. "pythonanywhere.com". although it can work.
+it's not worth the trouble. the free account is slow and service would be poor.
 solution: migrate from mysql to mongodb instead
 ```
 ##### why using mysql is a problem in deployment:
