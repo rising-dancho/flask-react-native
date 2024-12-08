@@ -9,7 +9,8 @@
 
 ```
 uh..oh!! can't deploy!! hahahaha damn son! no one's gonna carry the boats!!
-probably switching to mongodb instead of mysql
+currently having issues with "mysqlclient" dependency causing issues on deployment!
+don't want to deploy on non free playforms just to get my simple crud app working
 ```
 
 # frontend
