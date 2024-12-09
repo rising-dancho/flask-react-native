@@ -133,6 +133,3 @@ npm install
 ```
 npm run dev
 ```
-
-
-# flask-mongodb-react-native
