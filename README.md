@@ -15,7 +15,7 @@ just so that i can get my simple crud app running on the web..
 however, i found a free alternative.. "pythonanywhere.com". although it can work.
 it's not worth the trouble. the free account is slow and service would be poor.
 
-SOLUTION: migrate from "mysql" to "mongodb" instead
+SOLUTION: migrating from "mysql" to "mongodb" instead
 ```
 ##### why using mysql is a problem in deployment:
 ```
